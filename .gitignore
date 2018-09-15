@@ -195,9 +195,13 @@ ClientBin/
 node_modules/
 orleans.codegen.cs
 
+.svn/
+
+
 # Since there are multiple workflows, uncomment next line to ignore bower_components
 # (https://github.com/github/gitignore/pull/1529#issuecomment-104372622)
 #bower_components/
+lib/
 
 # RIA/Silverlight projects
 Generated_Code/
