@@ -7,9 +7,13 @@
 
   <ItemGroup>
     <Compile Remove="Areas\PBI\**" />
+    <Compile Remove="wwwroot\lib\powerbi\**" />
     <Content Remove="Areas\PBI\**" />
+    <Content Remove="wwwroot\lib\powerbi\**" />
     <EmbeddedResource Remove="Areas\PBI\**" />
+    <EmbeddedResource Remove="wwwroot\lib\powerbi\**" />
     <None Remove="Areas\PBI\**" />
+    <None Remove="wwwroot\lib\powerbi\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -51,9 +55,6 @@
     <None Include="Areas\Identity\Pages\Roles\Edit.cshtml" />
     <None Include="Areas\Identity\Pages\Roles\Index.cshtml" />
     <None Include="Areas\Identity\Pages\Roles\_ViewImports.cshtml" />
-    <None Include="wwwroot\lib\powerbi\powerbi.js" />
-    <None Include="wwwroot\lib\powerbi\powerbi.js.map" />
-    <None Include="wwwroot\lib\powerbi\powerbi.min.js" />
   </ItemGroup>
 
 </Project>
