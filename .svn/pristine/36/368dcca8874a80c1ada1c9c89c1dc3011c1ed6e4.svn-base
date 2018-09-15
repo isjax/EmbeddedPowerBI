@@ -1,5 +1,0 @@
-﻿@using Microsoft.AspNetCore.Identity
-@using EmbeddedPowerBI.Areas.Identity
-@using EmbeddedPowerBI.Areas.Identity.Data
-@namespace EmbeddedPowerBI.Areas.Identity.Pages
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers

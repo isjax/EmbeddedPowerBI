@@ -1,2 +1,0 @@
-﻿@namespace WebApplication4.Areas.PBI.Pages
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
