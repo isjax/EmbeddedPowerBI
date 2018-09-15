@@ -1,0 +1,35 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "UsersContextConnection": "Data Source=REUVEN-PC\\SQL2012;Initial Catalog=epbiusers;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
+    //"UsersContextConnection": "Server=(localdb)\\mssqllocaldb;Database=UserRolesTest001;Trusted_Connection=True;MultipleActiveResultSets=true"
+  },
+
+  "PBISettings": {
+    "ApiUrl": "https://api.powerbi.com/",
+    "ResourceUrl": "https://analysis.windows.net/powerbi/api",
+    "AuthorityUrl": "https://login.windows.net/common/oauth2/token/",
+    "EmbedUrlBase": "https://app.powerbi.com/",
+    "ApplicationId": "be044ee2-b0cf-459d-97be-71647ff55717",
+    "WorkspaceId": "04ca0fc0-740f-46c6-a080-60cf50f1a24c",
+    "ReportId": "4dbdefa5-8012-4ccd-be3b-01984a2bd139",
+    "Username": "wfs1@inherentsimplicity.com",
+    "Password": "Symphony1",
+    "AccessKey": "",
+    "PBIWorkspaceCollection": "",
+    "PBIWorkspaceId": ""
+  },
+
+  "SmtpSettings": {
+    "SmtpServer": "smtp.office365.com",
+    "SmtpPort": 587,
+    "SmtpUsername": "reuven.jackson@inherentsimplicity.com",
+    "SmtpPassword": "Tmp758642"
+  }
+
+}

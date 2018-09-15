@@ -1,0 +1,49 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using EmbeddedPowerBI.Areas.Identity.Data
+@using Microsoft.AspNetCore.Authorization;
+@inject SignInManager<ApplicationUser> signInManager
+@inject UserManager<ApplicationUser> userManager
+@inject IAuthorizationService authorizationService
+
+@if (signInManager.IsSignedIn(User))
+{
+    <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                @{
+                    ApplicationUser appUser;
+                }
+                @if ((appUser = await userManager.FindByEmailAsync(User.Identity.Name)) != null)
+                {
+                    <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@appUser.DisplayName</a>
+                }
+                else
+                {
+                    <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"> Hello @userManager.GetUserName(User)!</a>
+                }
+            </li>
+
+            @*@if ((await authorizationService.AuthorizeAsync(User, RoleName.SysAdmin)).Succeeded)
+            {
+                <li><a asp-area="Identity" asp-page="/Account/Users"> Users </a></li>
+
+                <li><a asp-area="Identity" asp-page="/Account/Organizations"> Organizations </a></li>
+
+                <li><a asp-area="Identity" asp-page="/Roles/Index"> Roles </a></li>
+            }*@
+            <li>
+                <button type="submit" class="btn btn-link navbar-btn navbar-link" style="margin-right:15px">Logout</button>
+            </li>
+        </ul>
+    </form>
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        @*<li><a asp-area="Identity" asp-page="/Account/Register">Register</a></li>*@
+        @*<li><a asp-area="Identity" asp-page="/Account/Users">Users</a></li>*@
+        @*<li><a asp-area="Identity" asp-page="/Organizations/Index">Organizations</a></li>*@
+        @*<li><a asp-area="Identity" asp-page="/Roles/Index">Roles</a></li>*@
+        <li><a asp-area="Identity" asp-page="/Account/Login">Login</a></li>
+    </ul>
+}

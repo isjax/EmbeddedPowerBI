@@ -1,0 +1,7 @@
+﻿
+@{
+    System.Diagnostics.Trace.WriteLine("2222222222222222222222222222222222222222222222222222222222222222222222222");
+    System.Diagnostics.Trace.WriteLine(Layout);
+    Layout = "/Pages/Shared/_Layout.cshtml";
+    System.Diagnostics.Trace.WriteLine(Layout);
+}
