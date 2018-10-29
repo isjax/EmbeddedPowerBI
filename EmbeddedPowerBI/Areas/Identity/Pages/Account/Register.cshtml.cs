@@ -121,7 +121,7 @@ namespace EmbeddedPowerBI.Areas.Identity.Pages.Account
                         values: new { code },
                         protocol: Request.Scheme);
 
-                    await emailSender.SendEmailAsync(Input.User.Email, "You have been registered for WISARD",
+                    await emailSender.SendEmailAsync(Input.User.Email, "You have been registered for Onebeat",
                         $"Please reset your password by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
                     //await signInManager.SignInAsync(user, isPersistent: false);

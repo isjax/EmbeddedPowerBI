@@ -1,7 +1,7 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "WISARD";
+    ViewData["Title"] = "Onebeat";
     Layout = "_EmbeddedLayout";
 }
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -46,7 +46,11 @@
         id: embedReportId,
         permissions: models.Permissions.All,
         settings: {
-            filterPaneEnabled: true,
+            //layoutType: models.LayoutType.Custom,
+            //customLayout: {
+            //    displayOpton: models.DisplayOption.FitToWidth
+            //},
+            filterPaneEnabled: false,
             navContentPaneEnabled: true
         }
     };
