@@ -47,19 +47,32 @@ div.embedded-content {
     overflow: hidden;
 }
 
-.navbar-inverse .navbar-brand > span.onebeat-one {
-    color: rgb(151, 215, 216);
-    font-style:italic;
 
+.navbar-inverse .navbar-brand > span.onebeat-one {
+    color: #f44336;
+    font-style: italic;
+    font-size: 32px;
+    vertical-align: text-top;
+    font-weight: bold;
 }
 
 .navbar-inverse .navbar-brand > span.onebeat-beat {
     color: rgb(245, 240, 240);
+    vertical-align: text-bottom;
+    font-style: italic;
+    font-size: 22px;
 }
 
 .navbar-inverse .navbar-brand:hover > span.onebeat-one {
-    color: rgb(195,230,230);
+    color: #f96f65;
+    font-size: 32px;
+    font-style: italic;
+    vertical-align: text-top;
+    font-weight: bold;
 }
 .navbar-inverse .navbar-brand:hover > span.onebeat-beat {
     color: white;
+    vertical-align: text-bottom;
+    font-style: italic;
+    font-size: 22px;
 }
